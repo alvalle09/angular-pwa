@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule } from '@angular/material';
 import { ArticlesTechnologyComponent } from './articles-technology/articles-technology.component';
 
 @NgModule({
@@ -27,9 +27,10 @@ import { ArticlesTechnologyComponent } from './articles-technology/articles-tech
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
-  providers: [],
+  providers: [NewsapiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
